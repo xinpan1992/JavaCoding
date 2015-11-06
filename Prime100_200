@@ -6,12 +6,13 @@ public class Prime100_200{
 			        
 			        for(int j=2; j<i; j++){ 
 				        if( i%j==0 )		
-					continue outer;
+					continue outer; // 跳出质数筛选循环，不输出。跳到outer循环，继续下一个数
 			         }
 			System.out.print(" "+i);
 			n++;					
 			if( n<10 )				
-				continue;	
+				continue;  // 如果已经输出小于10个质数，那么就不换行
+				           //作用就是 每输出10个数换行
 			System.out.println( );
 			n=0;
 		}
